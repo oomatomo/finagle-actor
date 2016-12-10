@@ -1,0 +1,10 @@
+version: '2'
+services:
+  redis-master:
+    image: redis:3.0.5
+    ports:
+        - "6379:6379"
+  redis-slave:
+    image: redis:3.0.5
+    ports:
+        - "6380:6379"
